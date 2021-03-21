@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  gather_facts: yes
+
+  tasks:
+
+   - name: Hello world
+     shell: echo "This is working"
